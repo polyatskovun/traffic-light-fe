@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🚦 Traffic Light</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="page-title">🚦 Interactive Traffic Light</h1>
+    
+    <div class="traffic-light-container">
+        <div class="traffic-light">
+            <div class="light red active" id="redLight"></div>
+            <div class="light yellow" id="yellowLight"></div>
+            <div class="light green" id="greenLight"></div>
+        </div>
+        
+        <div class="control-panel">
+            <button class="switch-btn" onclick="switchLight()">
+                🔄 Наступний колір
+            </button>
+            <div class="status" id="status">
+                🔴 Червоний - СТОП!
+            </div>
+        </div>
+    </div>
+    
+    <div class="instructions"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
